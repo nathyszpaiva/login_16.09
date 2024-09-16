@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.html">
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li><a href="index.html"><img src="logo.png" alt="" width="5%"></a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="produtos.html">PRODUTOS</a></li>
+            <li class="dropdown">
+                <a href="#servicos" class="dropbtn">SERVIÇOS</a>
+                <ul class="dropdown-content">
+                    <li><a href="#design">DESIGN</a></li>
+                    <li><a href="#desenvolvimento">DESENVOLVIMENTO</a></li>
+                    <li><a href="#marketing">MARKETING</a></li>
+                </ul>
+            </li>
+            <li><a href="sobre.html">SOBRE</a></li>
+            <li><a href="cadastro.html"><button class="btn-login">CADASTRE-SE</button></a></li>
+        </ul>
+    </nav>
+    <nav class="navsecundaria">
+        <p></p>
+    </nav>
+    </header>
+    <br>
+    <br> 
+
+    <div class="container-login">
+        <center><a href="index.html"><img src="logo.png" alt="" width="25%"></a></center>
+        <h2>LOGIN</h2>
+        <form action="login.html" method="POST">
+                <!-- Campo de Nome de Usuário -->
+                 <label for="username">Nome de Usuário ou E-mail:</label>
+                 <input type="text" id="username" name="username" required>
+
+                 <!-- Campo de Senha -->
+                  <label for="senha">Senha:</label>
+                  <input type="password" name="senha" id="senha" required>
+
+                  <!-- Botão de envio do formulário-->
+                   <button type="submit">Entrar</button>
+
+                   <!-- Link para cadastro, caso o usuário não tenha uma conta -->
+                    <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+        </form>
+    </div>
+
+    <section class="contato" id="contato"></section>
+        <footer>
+           <div class="footer-container">
+            <div class="footer-section">
+                <h4>Sobre Nós</h4>
+                <p>Somos uma empresa dedicada a fornecer soluções de alta qualidade para nossos clientes</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links rápidos</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>E-mail: contato@empresa.com</p>
+                <p>Telefone: (11) 1234-5678</p>
+                <p>Endereço: Rua Exemplo, 123, São Paulo, SP</p>
+            </div>
+            <div class="footer-section">
+                <h4>Siga-nos</h4>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank">Facebook</a>
+                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                    <a href="https://instagram.com" target="_blank">Instagram</a>
+                </div>
+            </div>
+           </div>
+           <div class="footer-bottom">
+            <br>
+            <p>&copy; 2024 Empresa. Todos os direitos reservados</p>
+           </div>
+        </footer>
+    </section>
+</body>

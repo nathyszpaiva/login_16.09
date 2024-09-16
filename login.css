@@ -1,0 +1,208 @@
+nav {
+    background-color: #e97c7c; /* Cor de fundo do menu */
+    padding: 10px 0; /* Espaçamento interno */
+}
+
+nav ul {
+    list-style-type: none; /* Remove as bolinhas padrão da lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Faz com que os itens fiquem lado a lado na horizontal */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+nav ul li {
+    position: relative; /*Necessário para o posicionamento do dropdown*/
+    margin: 0 15px; /* Espaçamento entre os itens do menu */
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255); /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 19px; /* Tamanho da fonte */
+    padding: 15px;
+    display: block; /*Torna o link clicável em toda a área*/
+    transition: color 0.3s; /* Transição suave para a mudança de cor */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fonte do texto */
+}
+
+nav ul li a:hover {
+    color: #4d4141; /* Cor do texto ao passar o mouse (hover) */
+}
+
+/*Estilo do dropdown*/
+nav ul li .dropdown-content{
+    display: none; /*Esconde o submenu inicialmente*/
+    position: absolute; /*Posiciona o submenu em relação ao item pai*/
+    background-color: #e97c7c;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);
+    z-index: 1; /*Garante que  o submenu fique acima de outros elementos*/
+    min-width: 160px;
+    padding: 0;
+}
+
+nav ul li .dropdown-content li{
+    margin: 0;
+}
+
+nav ul li .dropdown-content li a{
+    padding: 10px 15px;
+}
+
+nav ul li .dropdown-content li a:hover{
+    background-color: #ffffff; /*Cor de fundo ao passar o mouse sobre o submenu*/
+}
+
+/*Exibe o submenu ao passar o mouse sobre o item principal*/
+nav ul li:hover .dropdown-content{
+    display: block;
+}
+
+/* Estilo da tela de login */
+.container-login {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Cor de fundo do formulário */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.container-login h2 {
+    color: #e97c7c; /* Cor do título */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Fonte do título */
+    margin-bottom: 20px;
+}
+
+.container-login label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #4d4141; /* Cor dos rótulos */
+}
+
+.container-login input[type="text"],
+.container-login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd; /* Borda dos campos de entrada */
+    border-radius: 4px; /* Bordas arredondadas dos campos de entrada */
+    font-size: 16px;
+}
+
+.container-login button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e97c7c; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.container-login button:hover {
+    background-color: #d06565; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.container-login p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container-login p a {
+    color: #e97c7c; /* Cor do link de cadastro */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container-login p a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse sobre o link de cadastro */
+}
+
+/*Estilo geral do footer*/
+footer{
+    background-color: #e97c7c;
+    color:white;
+    padding: 40px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section{
+    flex-basis: 23%; /*Faz com que as seções ocupem 23% da largura, com espaço para margens*/
+    margin-bottom: 20px;
+}
+
+.footer-section h4{
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.footer-section p, .footer-section ul{
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.footer-section ul{
+    list-style-type: none;
+}
+
+.footer-section ul li{
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section p{
+    color: white;
+}
+
+.footer-section h4{
+    color: #4d4141;
+}
+
+.footer-section ul li a:hover{
+    color: #ffffff;
+}
+
+.social-links a{
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover{
+    color: #ffffff;
+}
+
+.footer-bottom{
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    border-top: 1px solid #ffffff;
+    font-size: 14px;
+}
+
+.footer-bottom p{
+    margin: 0;
+}
+
